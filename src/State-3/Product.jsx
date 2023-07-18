@@ -16,7 +16,13 @@ class Product extends React.Component{
             }
 
     render(){
-
+        const mystyle = {
+            color: "white",
+            backgroundColor: "DodgerBlue",
+            padding: "10px",
+            fontFamily: "Arial"
+          };
+              
         return(
               <div>
                 
@@ -28,7 +34,7 @@ class Product extends React.Component{
                     <div className="row">
                         <div className="col-6">
                                <div className="card">
-                                <h2 style={{color:"red"}}>Violin for Music</h2>
+                                <h2 style={{backgroundColor:"red"}}>Violin for Music</h2>
                                </div>
                                <div className="cardbody" >
                                 <h2 style={{color:"green"}}>Instrument Name:{this.state.p_name}</h2>
@@ -38,7 +44,8 @@ class Product extends React.Component{
                                 <button onClick={this.IncrHandler} className="btn btn-success">+</button>
                                 <button onClick={this.DecrHandler} className="btn btn-danger">-</button>
                                </div>
-
+                                <p style={mystyle}>The violin is the smallest and highest-pitched of the instruments in the string family. It is related to a North African instrument called a rebab (a three-stringed instrument also played with a bow drawn across the strings). 
+                                Violins have been traditionally used as an accompaniment to singing and dancing.</p>
                         </div>
                     </div>
                   </div>
