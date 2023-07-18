@@ -1,15 +1,15 @@
+import React from "react";
 import Message from "./Message"
-let App=()=>{
-       let wish="Good Morning"
-        
+class App extends React.Component{
 
-     return(
-        <div>
+
+    render(){
+        return <div>
             <h2>App Component</h2>
-            <h3>wish:{wish}</h3>
             <hr />
-            <Message/>  
+            <Message/>
         </div>
-    )
+    }
 }
 export default App
+
