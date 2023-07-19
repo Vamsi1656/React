@@ -18,7 +18,7 @@ class Product extends React.Component{
                 <h2>Product Component</h2>
                 <pre>{JSON.stringify(this.state)}</pre>
                 <h3>Name:{this.state.p_name}</h3>
-                <h3>Name:{this.state.price}</h3>
+                <h3>Name:{this.state.price*this.state.Qty}</h3>
                 <h3>Name:{this.state.Qty}</h3>
                 <button onClick={this.UpdateHandler.bind(this,this.state.Qty+1)}>INCR</button>
                 <button onClick={this.UpdateHandler.bind(this,this.state.Qty-1)}>DECR</button>
