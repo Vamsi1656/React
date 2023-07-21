@@ -1,9 +1,15 @@
+import Users from "./Users"
 let App=()=>{
 
     return(
 
         <div>
-            <h2>App Component</h2>
+            <nav className="navbar nav-dark bg-dark">
+                <a href="./index.html" className="navbar-brand">Users Data</a>
+            </nav>
+            <hr />
+            <Users/>
         </div>
     )
 }
+export default App
