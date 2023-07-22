@@ -1,6 +1,7 @@
 // import React from "react"
 import ReactDOM  from "react-dom"
-import App from "./Axios/App"
+import  '../node_modules/bootstrap/dist/css/bootstrap.css'
+import App from "./Table/App"
 ReactDOM.render(<App/>,document.getElementById('root'))
 // ReactDOM.render(<A/>,document.getElementById('root'))
 // ReactDOM.render(<App/>,document.getElementById('root'))
