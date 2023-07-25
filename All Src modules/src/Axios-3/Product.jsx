@@ -1,4 +1,4 @@
-// ComponentDidMount is a method which executes automatically after rendor method
+// ComponentDidMount is a method which executes automatically after render method
 
 import React, { Component } from 'react'
 import axios from 'axios'
