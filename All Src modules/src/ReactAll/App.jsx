@@ -1,4 +1,5 @@
-import Users from "./Users"
+// import Users from "./Users"
+import Product from "./Product"
 let App=()=>{
    
     return(
@@ -6,7 +7,7 @@ let App=()=>{
             <nav className="navbar navbar-dark bg-dark">
                 <a href="./" className="navbar-brand">React App</a>
             </nav>
-            <Users/>
+            <Product/>
         </div>
     )
 }
