@@ -4,7 +4,7 @@ function Usestate() {
     let [name,setName]= useState("Virat")
     let [id,setId]=useState(101)
     let [details,setDetails]= useState([45000,"Virat@gmail.com"])
-    let [city,setCity]= useState({})
+    let [city,setCity]= useState("Delhi")
 
     let NameHandler=()=>{
          setName("Nani")
@@ -16,7 +16,7 @@ function Usestate() {
         setDetails([55000,"nani@gmail.com"])
     }
     let CityHandler=()=>{
-            setCity({})
+            setCity("Hyd")
     }
   return (
     <div>

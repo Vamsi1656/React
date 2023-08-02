@@ -11,14 +11,10 @@ function Login() {
    setEvent({[event.target.name]:event.target.value})
 }
 
- let getSubmitHandler=(event)=>{
-    event.preventDefault()
-    console.log(event)
-}   
-
+ 
 return (
   <div>
-     <form onSubmit={getSubmitHandler}>
+     <form>
         <label>Name:</label>
         <input type="text" name="name" onChange={UpdateHandler} /><br />
         <label>Email:</label>

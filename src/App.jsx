@@ -1,11 +1,15 @@
 import React from 'react'
-import Password from './Password'
-function App() {
+import Product from './Product/Product'
+import { store } from './Redux/store'
+import { Provider } from 'react-redux'
+const App = () => {
   return (
     <div>
-        <h1>App Component</h1>
+      <Provider store={store}>
+        <h2>App Component</h2>
         <hr />
-        <Password/>
+        <Product/>
+      </Provider>
     </div>
   )
 }
