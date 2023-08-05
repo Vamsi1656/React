@@ -1,30 +1,31 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-export class Restrict extends Component {
-    state={
-        charcount:100,
-        maxlen:100
-    }
-    countHandler=(event)=>{
+const Restrict = () => {
+
+    let [count,setCount]=useState(100)
+       
+    
+    let countHandler=(event)=>{
         var lencount=event.target.value.length
-        var max_Len=this.state.maxlen
-        var result= max_Len-lencount
-        this.setState({
-            charcount:result
-        })
-        
+        console.log(lencount)
+        //var max_Len=count.maxlen
+        var result=event.target.maxLength-lencount
+        setCount(result )
+
     }
-  render() {
-    return (
-      <div>
-        <h1>SMS Application</h1>
-        <pre>{JSON.stringify(this.state)}</pre>
-        <textarea  rows="10" maxLength={100} onChange={this.countHandler}></textarea>
+
+  return (
+    <div>
+        <h2>SMS Application Using Functional Component</h2>
         <hr />
-        <h3>Remaining characters:{this.state.charcount}</h3>
-      </div>
-    )
-  }
+        <pre>{JSON.stringify(count)}</pre>
+        
+        <textarea rows={10} maxLength={100} onChange={countHandler}></textarea>
+        <hr />
+        
+        <h4>Remaining Characters:{count}</h4>
+   </div>
+  )
 }
 
 export default Restrict
