@@ -1,13 +1,11 @@
 import React from 'react'
-import Message from './Message/Message'
+import Restrict from './Restrict'
 const App = () => {
   return (
     <div>
-    
         <h2>App Component</h2>
         <hr />
-        <Message/>
-      
+        <Restrict/>
     </div>
   )
 }
