@@ -18,9 +18,9 @@ const Restrict = () => {
     <div>
         <h2>SMS Application Using Functional Component</h2>
         <hr />
-        <pre>{JSON.stringify(count)}</pre>
+        {/* <pre>{JSON.stringify(count)}</pre> */}
         
-        <textarea rows={10} maxLength={100} onChange={countHandler}></textarea>
+        <textarea rows={10} cols={100} maxLength={100} onChange={countHandler}></textarea>
         <hr />
         
         <h4>Remaining Characters:{count}</h4>
