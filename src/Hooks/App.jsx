@@ -1,11 +1,11 @@
 import React from 'react'
-import Usestate from './Usestate'
+import Product from './UseeffectHook/Product'
 function App() {
   return (
     <div>
       <h2>App Component</h2>
       <hr />
-      <Usestate/>
+      <Product/>
     </div>
   )
 }
