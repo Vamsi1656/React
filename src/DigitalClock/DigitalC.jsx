@@ -4,9 +4,9 @@ class DigitalC extends Component {
     state={
         ct:new Date().toLocaleTimeString()
     }
-    timer;
+   
     componentDidMount(){
-        this.timer=setInterval(()=>{
+        setInterval(()=>{
             this.setState({ct:new Date().toLocaleTimeString()})
         })
     }

@@ -6,7 +6,7 @@ const DigitalF = () => {
         setInterval(()=>{
             setCT(new Date().toLocaleTimeString())
         },1000)
-    },[])
+    })
   return (
     <div>
         <h2>Digital Clock using Functional Component</h2>
