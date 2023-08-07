@@ -1,16 +1,17 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 const DigitalF = () => {
-    let[ct,setCT]=React.useState(new Date().toLocaleTimeString())
-    React.useEffect=(()=>{
-        setInterval(()=>{
-            setCT(new Date().toLocaleTimeString())
-        },1000)
-    })
+    let [ct,setCT]=useState(new Date().toLocaleTimeString())
+  useEffect(()=>{
+    setInterval(()=>{
+         setCT(new Date().toLocaleTimeString())
+    },1000)
+  })
   return (
     <div>
-        <h2>Digital Clock using Functional Component</h2>
-        <h3>Current Time:{ct}</h3>
+        <h3>Digital Clock using Functional Component</h3>
+        <pre>CT:{ct}</pre>
+        <h2>Current Time:{ct}</h2>
     </div>
   )
 }
