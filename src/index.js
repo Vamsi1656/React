@@ -1,4 +1,4 @@
 // import React from "react"
 import ReactDOM  from "react-dom"
-import App from './RegistrationForm/App'
+import App from './DataFilter/App'
 ReactDOM.render(<App/>,document.getElementById('root'))
