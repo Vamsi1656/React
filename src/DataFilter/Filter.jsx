@@ -2,22 +2,25 @@ import React from 'react'
 import {data} from './data.js'
 const Filter = () => {
     let [search,setSearch]=React.useState("")
-    console.log(search)
+    // console.log(search)
+    //  console.log(data)
   return (
     <div>
         <h3>Filter Component</h3>
         <div className="container">
             <div className="row">
                 <div className="col-6">
-            <input onChange={(event)=>setSearch(event.target.value)} type="search" placeholder="Search here..." aria-describedby="button-addon8" class="form-control"/><br></br> 
+            <input onChange={(event)=>setSearch(event.target.value)} type="search" placeholder="Search here..." aria-describedby="button-addon8" className="form-control"/><br></br> 
                     <table className='table'>
-                        <thead>
+                        <thead className='bg-primary'>
+                            <tr>
                             <th>ID</th>
                             <th>First_Name</th>
                             <th>Last_Name</th>
                             <th>Email</th> 
                             <th>Gender</th> 
                             <th>Mobile Number</th> 
+                            </tr>
                         </thead>
                         <tbody>
                             {data.filter((item)=>{

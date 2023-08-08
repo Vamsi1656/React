@@ -3,8 +3,6 @@ import Filter from './Filter'
 const App = () => {
   return (
     <div>
-        <h2>App Component</h2>
-        <hr />
         <Filter/>
     </div>
   )
